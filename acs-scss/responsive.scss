@@ -1,0 +1,37 @@
+@import "vars.scss";
+
+@media screen and (max-width: 1260px) {
+  .icon-line, .menu-container { transition: all ease 0.3s; }
+  #top-bar { top: 0; z-index: 12; height: 70px;}
+  .icon-menu:hover { cursor: pointer;}
+  .menu-container { display: none; margin-top: 70px; position: absolute; background: white; width: 100%;}
+  .mostrar { display: block;} //Estilo js
+  .icon-menu { margin: 0 7% 0 0; width: 35px; height: 35px; display: block; right: 0; z-index: 999;}
+  .icon-line { display: block; border-radius: 5px; width: 35px; height: 6px; background: $primary;position: absolute; }
+  .icon-line:nth-child(2) { margin-top: 12px;}
+  .icon-line:nth-child(3)  { margin-top: 24px;}
+  
+  /*Estilos js*/
+  .rotate-1 {transform: rotate(45deg);margin-top: 12px;}
+  .rotate-2 {transform: rotate(-45deg);margin-top: 12px !important;}
+/**/
+  nav { margin-right: 0; box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.1); height: calc(100vh - 50px);  overflow-y: scroll; text-align: right; padding-right: 7%; width: 93%;}
+  nav ul li{ display: block; margin: 30px 0;}
+  nav ul li ul{ position: relative; background: $gray;}
+  nav li { font-size: 18px;}
+}
+
+@media screen and (max-width: 900px) {
+  iframe { max-height: 350px; }
+ }
+
+@media screen and (max-width: 740px) {
+  .cover { background-image: url("img/cover-phone.jpg");}
+
+  iframe { max-height: 480px; }
+  .cover { height: 500px;}
+  .cover, .img { background-attachment: initial;}
+  
+}
+
+/*# sourceMappingURL=responsive.css.map */
